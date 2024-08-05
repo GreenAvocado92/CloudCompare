@@ -1,9 +1,10 @@
+set(Qt5_DIR "C:/apps/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5")
 find_package( Qt5
 	COMPONENTS
 		Core
 	REQUIRED
 )
-
+include("C:/apps/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfig.cmake")
 get_target_property( qmake_location Qt5::qmake IMPORTED_LOCATION )
 get_filename_component( qt5_bin_dir ${qmake_location} DIRECTORY )
 

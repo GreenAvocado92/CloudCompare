@@ -4,7 +4,7 @@
 # AND ADAPT THE CODE BELOW TO YOUR OWN NEEDS!
 
 # Add an option to CMake to control whether we build this plugin or not
-option( PLUGIN_SEGMENTATION_STANDARD "Install example plugin" OFF )
+option( PLUGIN_SEGMENTATION_STANDARD "Install example plugin" ON )
 
 if ( PLUGIN_SEGMENTATION_STANDARD )
 	project( Segmentation )
